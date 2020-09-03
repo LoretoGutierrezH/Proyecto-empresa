@@ -148,7 +148,7 @@ class MemorizeEntryPoint extends Component {
               </button>
               <p className={context.visionProblemsMode === true ? "visionProblemsWhiteFont" : "visionProblemsBlackFont"}>{this.state.winnerMessage}</p>
               <p className={context.visionProblemsMode === true ? "visionProblemsWhiteFont" : "visionProblemsBlackFont"}>{this.state.prize}</p>
-              {this.state.winner === true ? <Link to="/game/ranking"><button className={context.visionProblemsMode === true ? "back-btn visionProblemsBlack visionProblemsFontWeight" : "back-btn purple"}>Revisa tus resultados</button></Link> : null}
+              <Link to="/game/ranking"><button className={context.visionProblemsMode === true ? "back-btn visionProblemsBlack visionProblemsFontWeight" : "back-btn purple"}>Revisa tus resultados</button></Link>
 
               <MemorizeBoard
                 deck={this.state.deck}
